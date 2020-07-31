@@ -1,0 +1,810 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "1.8.0_202-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.GridBagLayout ) {
+			"$columnSpecs": "0:1.0"
+			"$rowSpecs": "0:1.0, 0:1.0"
+			"$alignTop": true
+			"$alignLeft": true
+		} ) {
+			name: "mainFrame"
+			"title": "golestan system"
+			"$sizePolicy": 1
+			"$locationPolicy": 1
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "studentButton"
+				"text": "Log In"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "studentButtonMouseClicked", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "studentButtonMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "noticeButton"
+				"text": "Notices"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "noticeButtonMouseClicked", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "noticeButtonMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 1
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 200, 125 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class java.awt.GridBagLayout ) {
+			"$columnSpecs": "0:1.0"
+			"$rowSpecs": "0:1.0, 0, 0:1.0, 0:1.0, 0:1.0, 0:1.0, 0:1.0, 0"
+			"$alignTop": true
+			"$alignLeft": true
+		} ) {
+			name: "studentFrame"
+			"title": "student's page"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "selectButton"
+				"text": "Add Course"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "selectButtonMouseClicked", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "selectButtonMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "rmvButton"
+				"text": "Edit Selected Courses"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button5MouseClicked", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "rmvButtonMouseClicked", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "rmvButtonMouseClicked", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "rmvButtonMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 1
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "payButton"
+				"text": "Pay Tuition"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "payButtonMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 2
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "lessonButton"
+				"text": "Show Lessons Of Each Term"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "lessonButtonMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 3
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "unitButton"
+				"text": "Show Units Passed & Failed"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "unitButtonMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 4
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "scoreButton"
+				"text": "Show Scores"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "scoreButtonMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 5
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "averageButton"
+				"text": "Average"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "averageButtonMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 6
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "backBtn1"
+				"text": "Back"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "backBtn1MouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 7
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 210, 0 )
+			"size": new java.awt.Dimension( 225, 300 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class java.awt.GridBagLayout ) {
+			"$columnSpecs": "0:1.0"
+			"$rowSpecs": "0:1.0, 0:1.0, 0:1.0, 0:1.0, 0:1.0, 0:1.0, 0"
+			"$alignTop": true
+			"$alignLeft": true
+		} ) {
+			name: "teacherFrame"
+			"title": "teacher's page"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "buttonLesson"
+				"text": "Show Lessons"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "buttonLessonMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "buttonInsert"
+				"text": "Insert Student Score"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "buttonInsertMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 1
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "buttonIncome"
+				"text": "Show Income"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "buttonIncomeMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 2
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "buttonRemove"
+				"text": "Remove Student"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "buttonRemoveMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 3
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "buttonNum"
+				"text": "Students Info for Each Course"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "buttonNumMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 4
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "buttonEvaluation"
+				"text": "Survey Score"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "buttonEvaluationMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 5
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "backBtn2"
+				"text": "Back"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "backBtn2MouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 6
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 445, 0 )
+			"size": new java.awt.Dimension( 225, 275 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class java.awt.GridLayout ) {
+			"columns": 1
+			"rows": 3
+		} ) {
+			name: "logFrame"
+			"title": "login"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "usernameField"
+				"text": "enter username"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "usernameFieldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "passField"
+				"text": "enter password"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "passFieldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "enterButton"
+				"text": "Enter"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "enterButtonMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 135 )
+			"size": new java.awt.Dimension( 200, 150 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class java.awt.GridBagLayout ) {
+			"$columnSpecs": "0:1.0"
+			"$rowSpecs": "0:1.0, 0:1.0, 0:1.0, 0:1.0, 0:1.0, 0:1.0, 0"
+			"$alignTop": true
+			"$alignLeft": true
+		} ) {
+			name: "employeeFrame"
+			"title": "employee's page"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button6"
+				"text": "show salary"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button6MouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button7"
+				"text": "record leave"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button7MouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 1
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "report of the latest employee status"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button1MouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 2
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "loan demand"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button2MouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 3
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "registering in system"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button3MouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 4
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button4"
+				"text": "save,edit personal,educational Specifications"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button4MouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 5
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "backBtn3"
+				"text": "Back"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "backBtn3MouseClicked", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "backBtn3MouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 6
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 680, 0 )
+			"size": new java.awt.Dimension( 325, 275 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class java.awt.GridBagLayout ) {
+			"$columnSpecs": "0:1.0"
+			"$rowSpecs": "0:1.0, 0"
+			"$alignTop": true
+			"$alignLeft": true
+		} ) {
+			name: "noticeFrame"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			"title": "Notices"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "noticeLbl"
+				"text": "text"
+				"horizontalAlignment": 4
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "backBtn4"
+				"text": "Back"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "backBtn4MouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 1
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 1015, 0 )
+			"size": new java.awt.Dimension( 585, 175 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp logErrorText::::186:x, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp logErrorText::::56:x, space :::p}}"
+		} ) {
+			name: "logErrorDialog"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			"title": "Error"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "logErrorText"
+				"text": "text"
+				"horizontalAlignment": 0
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 1015, 185 )
+			"size": new java.awt.Dimension( 200, 100 )
+		} )
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp label2:::p:182:p, space :::p, comp rmvFld:::p:110:p, space s:::p, comp rmvBtn:::p::p, space :::x, comp backBtn5:::p:181:p, space :::p}, seq {par l {comp infoLbl2:::p:798:p, comp rmvLbl::l:p:798:p}, space :0:0:x}}"
+			"$verticalGroup": "par l {seq {comp infoLbl2:::p:40:p, space :::p, comp rmvLbl:::p:300:p, space :::p, par b {comp backBtn5::b:p::p, comp rmvFld::b:p::p, comp rmvBtn::b:p::p, comp label2::b:::x}, space :::p}}"
+		} ) {
+			name: "rmvFrm"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			"title": "Remove Course"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "infoLbl2"
+				"text": "(CouseID\\TeacherID\\Name\\Requirements\\Time\\ClassID)"
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "rmvLbl"
+				"text": "text"
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "rmvFld"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "backBtn5"
+				"text": "Back"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "backBtn2MouseClicked", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "backBtn5MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "rmvBtn"
+				"text": "Remove"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "removeBtnMouseClicked", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "rmvBtnMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Enter Course ID to remove:"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": &Dimension0 new java.awt.Dimension( 800, 415 )
+			"location": new java.awt.Point( 810, 310 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class java.awt.GridLayout ) ) {
+			name: "dialog"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "dialogLabel"
+				"text": "Successful"
+				"horizontalAlignment": 0
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 375, 100 )
+			"location": new java.awt.Point( 1225, 185 )
+		} )
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp label3:::p::p, space s:::p, comp addFld:::p:135:p, space s:::p, comp addBtn:::p::p, space :::x, comp backBtn6:::p:181:p, space :::p}, seq {par l {comp infoLbl3:::p:798:p, comp addLbl::l:p:798:p}, space :0:0:x}}"
+			"$verticalGroup": "par l {seq {comp infoLbl3:::p:40:p, space :::p, comp addLbl:::p:300:p, space :::p, par b {comp backBtn6::b:p::p, comp addBtn::b:p::p, comp label3::b:::x, comp addFld::b:p::p}, space :::p}}"
+		} ) {
+			name: "addFrm"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			"title": "Add Course"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "infoLbl3"
+				"text": "(CouseID\\TeacherID\\Name\\Requirements\\Time\\ClassID)"
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "addLbl"
+				"text": "text"
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "addFld"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "backBtn6"
+				"text": "Back"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "backBtn2MouseClicked", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "backBtn6MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "addBtn"
+				"text": "Add"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "removeBtnMouseClicked", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "addBtnMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Enter Course ID to add:"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": #Dimension0
+			"location": new java.awt.Point( 0, 310 )
+		} )
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.GridLayout ) {
+			"columns": 1
+			"rows": 3
+		} ) {
+			name: "recordFrm"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			"title": "Leave"
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "hourFld"
+				"text": "enter hour"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "hourFldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "dateFld"
+				"text": "enter date"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "dateFldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "recordBtn"
+				"text": "Done"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "recordBtnMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 735 )
+			"size": new java.awt.Dimension( 200, 150 )
+		} )
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.GridLayout ) {
+			"columns": 1
+			"rows": 2
+		} ) {
+			name: "loanFrm"
+			"title": "Loan"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "loan1Btn"
+				"text": "1 Million"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "loan1BtnMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "loan2Btn"
+				"text": "2 Million"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "loan2BtnMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 210, 735 )
+			"size": new java.awt.Dimension( 175, 100 )
+		} )
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.GridLayout ) {
+			"columns": 1
+			"rows": 2
+		} ) {
+			name: "registerFrm"
+			"title": "Register"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "registerFld"
+				"text": "enter information"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "registerFldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "registerBtn"
+				"text": "Done"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "registerBtnMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 815, 735 )
+			"size": new java.awt.Dimension( 200, 100 )
+		} )
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.GridLayout ) {
+			"columns": 1
+			"rows": 4
+		} ) {
+			name: "saveFrm"
+			"title": "Save"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "suFld"
+				"text": "username"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "suFldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "spFld"
+				"text": "password"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "spFldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "seFld"
+				"text": "education"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "suFldMouseClicked", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "seFldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "sdBtn"
+				"text": "Done"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "sdBtnMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 395, 735 )
+			"size": new java.awt.Dimension( 200, 175 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class java.awt.GridLayout ) {
+			"columns": 1
+			"rows": 2
+		} ) {
+			name: "tuitionFrm"
+			"title": "Tuition"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "tuitionLbl"
+				"text": "text"
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "tuitionBtn"
+				"text": "Pay"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "tuitionBtnMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 605, 735 )
+			"size": new java.awt.Dimension( 200, 100 )
+		} )
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par l {comp label1::::286:x, comp reportBtn::t::286:x, comp reportLbl::l::286:x}, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp label1:::p:24:p, space :::p, comp reportLbl:::p:98:p, space :::x, comp reportBtn:::p::p, space :::p}}"
+		} ) {
+			name: "reportFrm"
+			"title": "Student Report"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "(TermID\\CourseID\\TeacherID\\Fail)"
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "reportLbl"
+				"text": "text"
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "reportBtn"
+				"text": "Back"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "reportBtnMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 920 )
+			"size": new java.awt.Dimension( 300, 200 )
+		} )
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par l {comp label4::::336:x, comp tReportLbl::l::336:x, comp tchReportBtn::t::336:x}, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp label4:::p:24:p, space :::p, comp tReportLbl:::p:98:p, space :::x, comp tchReportBtn:::p::p, space :::p}}"
+		} ) {
+			name: "tReportFrm"
+			"title": "Teacher Report"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "(CourseID\\Name\\Time\\ClassID\\Salary\\Survey)"
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "tReportLbl"
+				"text": "text"
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "tchReportBtn"
+				"text": "Back"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "tchReportBtnMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 350, 200 )
+			"location": new java.awt.Point( 0, 1130 )
+		} )
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space :::p, par t {comp label7::::336:x, comp failBtn::l:::x, comp label6::l:::x, comp passLbl::t:::x, comp failLbl::l::336:x}, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp label6:::p::p, space :::p, comp passLbl:::p:35:p, space u:::p, comp label7:::p::p, space :::x, comp failLbl:::p:35:p, space :::p, comp failBtn:::p::p, space :::p}}"
+		} ) {
+			name: "failFrm"
+			"title": "Pass\\Fail (TermID\\CourseID\\TeacherID)"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "passLbl"
+				"text": "text"
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "failBtn"
+				"text": "Back"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "failBtnMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "Passed:"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": "Failed:"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "failLbl"
+				"text": "text"
+				"horizontalAlignment": 0
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 350, 200 )
+			"location": new java.awt.Point( 310, 920 )
+		} )
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par l {comp label5::::186:x, comp scoresBtn::l::186:x, comp scoresLbl::l::186:x}, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp label5:::p:24:p, space :::p, comp scoresLbl:::p:98:p, space :::p, comp scoresBtn:::p::p, space :::x}}"
+		} ) {
+			name: "scoresFrm"
+			"title": "Scores"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "(CourseID\\Score)"
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "scoresLbl"
+				"text": "text"
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "scoresBtn"
+				"text": "Back"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "scoresBtnMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 200, 200 )
+			"location": new java.awt.Point( 670, 920 )
+		} )
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par l {comp avgBtn::::186:x, comp avgLbl::::186:x}, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp avgLbl::::101:x, space :::p, comp avgBtn:::p::p, space :::p}}"
+		} ) {
+			name: "avgFrm"
+			"title": "Averages"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "avgLbl"
+				"text": "text"
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "avgBtn"
+				"text": "Back"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "avgBtnMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 200, 175 )
+			"location": new java.awt.Point( 880, 920 )
+		} )
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.GridLayout ) {
+			"columns": 1
+			"rows": 2
+		} ) {
+			name: "cIDFrm"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "cIDFld"
+				"text": "Enter Course ID"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "cIDFldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "cIDBtn"
+				"text": "Done"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "cIDBtnMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 360, 1130 )
+			"size": &Dimension1 new java.awt.Dimension( 150, 95 )
+		} )
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par l {comp cReportCountLbl::::336:x, comp cReportBtn::l::336:x, comp cReportLbl::l::336:x}, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp cReportCountLbl:::p:24:p, space :::p, comp cReportLbl::::71:x, space :::p, comp cReportBtn:::p::p, space :::p}}"
+		} ) {
+			name: "cReportFrm"
+			"title": "Course Report (Study Field \\ Entry Year)"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "cReportCountLbl"
+				"text": "stu count"
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "cReportLbl"
+				"text": "text"
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "cReportBtn"
+				"text": "Back"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "cReportBtnMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 350, 175 )
+			"location": new java.awt.Point( 520, 1130 )
+		} )
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.GridLayout ) {
+			"columns": 1
+			"rows": 4
+		} ) {
+			name: "scoreFrm"
+			"title": "Score"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "idStudentFld"
+				"text": "enter student id"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "idStudentFldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "scoreFld"
+				"text": "enter score"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "scoreFldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "courseIdFld"
+				"text": "enter course id"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "courseIdFldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "scoreBtn"
+				"text": "Done"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "scoreBtnMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 880, 1130 )
+			"size": new java.awt.Dimension( 200, 175 )
+		} )
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.GridLayout ) {
+			"columns": 1
+			"rows": 3
+		} ) {
+			name: "removeFrame"
+			"title": "Remove"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "removeFld"
+				"text": "enter student id"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "removeFldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "removeFld2"
+				"text": "enter course id"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "removeFld2MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "removeButton"
+				"text": "Done"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "removeBtnMouseClicked", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "removeButtonMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 1090, 1130 )
+			"size": new java.awt.Dimension( 200, 125 )
+		} )
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.GridLayout ) {
+			"columns": 1
+			"rows": 2
+		} ) {
+			name: "srvyFrm"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "srvyFld"
+				"text": "Enter Course ID"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "srvyFldMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "srvyBtn"
+				"text": "Done"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "srvyBtnMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": #Dimension1
+			"location": new java.awt.Point( 360, 1235 )
+		} )
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.GridLayout ) {
+			"columns": 1
+			"rows": 2
+		} ) {
+			name: "surveyFrm"
+			"title": "Survey"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "surveyLbl"
+				"text": "text"
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "surveyBtn"
+				"text": "Back"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "surveyBtnMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 1090, 1025 )
+			"size": new java.awt.Dimension( 200, 100 )
+		} )
+	}
+}
